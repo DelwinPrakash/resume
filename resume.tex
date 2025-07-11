@@ -1,0 +1,124 @@
+\documentclass[a4paper,8pt]{article}
+
+% Basic packages
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+% Tables and layout
+\usepackage{tabularx}
+\usepackage{supertabular}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+% Lists
+\usepackage{enumitem}
+
+% Section formatting
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+% Bibliography
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+% Social icons
+\usepackage{fontawesome5}
+
+% Underline styles
+\usepackage[normalem]{ulem}
+
+% Custom section style
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{12pt}{12pt} % Increase spacing before & after sections
+
+% Hyperref - load last
+\usepackage[unicode, colorlinks=true, urlcolor=371e77, linkcolor=371e77]{hyperref}
+
+\begin{document}
+
+\pagestyle{empty} 
+
+%-------------------------
+% Header with name and contact info
+%-------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Delwin Prakash} \\[6pt]
+
+\textcolor[HTML]{371e77}{\faEnvelope\ dev.delwin@gmail.com} $|$
+\textcolor[HTML]{371e77}{\faMobile\ +91 9495356282} \\[4pt]
+
+\textcolor[HTML]{371e77}{\underline{\href{https://github.com/delwinprakash}{\raisebox{-0.05\height}{\faGithub} github.com/delwinprakash}}} $|$
+\textcolor[HTML]{371e77}{\underline{\href{https://linkedin.com/in/delwinprakash}{\raisebox{-0.05\height}{\faLinkedin} linkedin.com/in/delwinprakash}}} $|$
+\textcolor[HTML]{371e77}{\underline{\href{https://x.com/prakashdelwin}{\raisebox{-0.05\height}{\faTwitter} x.com/prakashdelwin}}}
+\end{tabularx}
+
+%-------------------------
+% Skills Section
+%-------------------------
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages:} C, Java, JavaScript, Python, Rust, Solidity, SQL, TypeScript\\[3pt]
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} Appwrite, Bootstrap, Ethereum, ExpressJS, Figma, Git, Github, NodeJS, MongoDB, Postman, ReactJS, React Native, Smart Contracts, Supabase, TailwindCSS, Vercel, VS Code, Web3.js
+
+%-------------------------
+% Objective Section
+%-------------------------
+\section{Objective}
+\begin{description}[nosep, leftmargin=0.5em, itemsep=2pt]
+    \item[] Computer Science student passionate about full-stack development and blockchain technology. Experienced in building scalable web/mobile applications using modern frameworks like React, Node.js, and Next.js. Eager to contribute to innovative projects in software development.
+\end{description}
+
+%-------------------------
+% Work Experience Section
+%-------------------------
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\textbf{Aoctolabs, Web3 Startup} & \color[HTML]{371e77} Oct 2024 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Front-End Developer (Intern)}} & \\[5pt]
+\multicolumn{2}{@{}X@{}}{%
+    \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Developed and deployed responsive user interfaces using ReactJS and Tailwind CSS, ensuring cross-device compatibility.
+        \item Optimized website performance through clean code practices and modern design principles.
+        \item Collaborated with team members to translate requirements into interactive features.
+    \end{itemize}
+}\\
+\end{tabularx}
+
+%-------------------------
+% Education Section
+%-------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\color[HTML]{1C033C}\textbf{Government Engineering College, Wayanad} & \color[HTML]{371e77} Nov 2022 -- May 2026 (Present) \\
+\color[HTML]{371e77} B.E. in Computer Science and Engineering & \\[3pt]
+\multicolumn{2}{@{}X@{}}{Relevant Coursework: Object Oriented Programming, Databases, Discrete Maths, Data Structures and Algorithms, Operating Systems, Computer Networks, Image Processing}
+\end{tabularx}
+
+%-------------------------
+% Project Work Section
+%-------------------------
+\section{Project Work}
+\begin{tabularx}{\linewidth}{@{}X@{}}
+    \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{ChatApp:} Developed a cross-platform real-time chat application using React Native and Expo, leveraging Supabase for backend authentication and real-time messaging, featuring secure user sign-up/login, instant message updates, and an intuitive UI with responsive design.
+        \item \textbf{Ecollect – Waste Management Website:} Built a full-stack waste management web application using MERN Stack, featuring user authentication, waste collection scheduling, and real-time tracking, styled with Tailwind CSS for a responsive and modern UI.
+        \item \textbf{Personal Portfolio Website:} Developed a high-performance, SEO-optimized portfolio using Next.js, featuring server-side rendering (SSR), dynamic routing, and a responsive design. Integrated modern UI animations, a project showcase with filtering, all deployed on Vercel for seamless CI/CD.
+    \end{itemize}
+\end{tabularx}
+
+%-------------------------
+% Certificates Section
+%-------------------------
+\section{Certificates}
+\begin{tabularx}{\linewidth}{@{}X@{}}
+    \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{Ethereum Learner:} Designed and deployed smart contracts using Solidity, with hands-on experience in DeFi protocols and dApp development.
+        \item \textbf{Explore ML Beginner Track:} Completed the Google Explore ML Beginner Track (Certificate issued by Crowdsource by Google), gaining foundational knowledge in machine learning concepts and practical applications under the guidance of Google program managers.
+    \end{itemize}
+\end{tabularx}
+
+\end{document}
