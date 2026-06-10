@@ -35,7 +35,7 @@
 
 % Custom section style
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{1pt}{11pt}{11pt} % Increase spacing before & after sections
+\titlespacing{\section}{1pt}{10pt}{6.5pt} % Increase spacing before & after sections
 
 % Hyperref - load last
 \usepackage[unicode, colorlinks=true, urlcolor=darkpurple, linkcolor=darkpurple]{hyperref}
@@ -63,13 +63,13 @@
 % Summary Section
 %-------------------------
 \section{Summary}
-\noindent Computer Science student and aspiring software engineer with hands-on experience in full-stack web and mobile app development, and growing expertise in blockchain technologies. Seeking opportunities to build scalable, efficient applications while contributing to innovative software projects.
+\noindent Computer Science graduate and aspiring software engineer with hands-on experience in full-stack web and mobile app development, and growing expertise in blockchain technologies. Passionate about building scalable, efficient applications and contributing to innovative software projects.
 
 %-------------------------
 % Skills Section
 %-------------------------
 \section{Skills}
-\textbf{Languages:} C, Java, JavaScript, Kotlin, Python, Rust, Solidity, SQL, TypeScript\\[3pt]
+\textbf{Languages:} C, Java, JavaScript, Kotlin, Python, Rust, Solidity, SQL, TypeScript\\[4pt]
 \textbf{Technologies \& Tools:} Anchor, AngularJS, Appwrite, Bootstrap, Docker, Ethereum, ExpressJS, Figma, Git, Github, NodeJS, MongoDB, Postman, React, React Native, Smart Contracts, Solana, Supabase, TailwindCSS, Vercel, Web3.js
 
 %-------------------------
@@ -77,27 +77,33 @@
 %-------------------------
 \section{Work Experience}
 \begin{tabularx}{\linewidth}{@{}l r@{}}
-\textbf{Aoctolabs, Web3 Startup} & \color{darkpurple} Oct 2024 -- Nov 2024\\[4pt]
-\color{darkpurple}\textbf{\textit{Front-End Developer (Intern)}} & \\[5pt]
-\multicolumn{2}{@{}X@{}}{%
-    \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=2pt]
-        \item Developed and deployed responsive user interfaces using ReactJS and Tailwind CSS, ensuring cross-device compatibility.
-        \item Optimized website performance through clean code practices and modern design principles.
-        \item Collaborated with team members to translate requirements into interactive features.
-    \end{itemize}
-}\\
-\end{tabularx}
+    \textbf{UniCredit} — \color{darkpurple}\textbf{\textit{Web Developer (Freelance)}} & \color{darkpurple} Apr 2026\\[0pt]
+    \multicolumn{2}{@{}X@{}}{%
+        \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=1.6pt]
+            \item Developed and deployed a responsive corporate website using Next.js, React, and modern web technologies.
+            \item Implemented server-side rendering (SSR) and optimized page performance for improved SEO and user experience.
+            \item Managed deployment, testing, and maintenance of the website.
+        \end{itemize}
+    }\\
 
+    \textbf{Aoctolabs, Web3 Startup} — \color{darkpurple}\textbf{\textit{Front-End Developer (Intern)}} & \color{darkpurple} Oct 2024 -- Nov 2024\\[0pt]
+    \multicolumn{2}{@{}X@{}}{%
+        \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=1.6pt]
+            \item Developed and deployed responsive UIs using ReactJS and Tailwind CSS, ensuring cross-device compatibility.
+            \item Collaborated with the team to translate requirements into performant, interactive features.
+        \end{itemize}
+    }\\
+\end{tabularx}
 %-------------------------
 % Education Section
 %-------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l r@{}}
-\textbf{Government Engineering College, Wayanad} & \color{darkpurple} Nov 2022 -- May 2026 (Present) \\
+\textbf{Government Engineering College, Wayanad} & \color{darkpurple} Nov 2022 -- May 2026 \\
 
-\color{darkpurple} B.E. in Computer Science and Engineering & \color{darkpurple} CGPA: 7.74 \\[3pt]
+\color{darkpurple} B.E. in Computer Science and Engineering & \color{darkpurple} CGPA: 7.71 \\[4pt]
 
-\multicolumn{2}{@{}X@{}}{Relevant Coursework: Object Oriented Programming, Databases, Discrete Maths, Data Structures and Algorithms, Operating Systems, Computer Networks, Image Processing, Distributed Computing}
+\multicolumn{2}{@{}X@{}}{Relevant Coursework: Object Oriented Programming, Databases, Discrete Maths, Data Structures and Algorithms, Operating Systems, Computer Networks, Image Processing, Distributed Computing, Network Security Protocols}
 \end{tabularx}
 
 %-------------------------
@@ -106,9 +112,11 @@
 \section{Project Work}
 \begin{tabularx}{\linewidth}{@{}X@{}}
     \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{\href{https://github.com/DelwinPrakash/EXPNX}{\textcolor{black}{EXPNX:}}} Built a Kotlin Android personal finance tracker app with an automated background SMS parser for zero-friction expense logging, architected on MVVM with Jetpack Compose and Room. Integrated real-time AI-driven analysis across spending patterns, budgets, goals, and bills.
+    
         \item \textbf{\href{https://crates.io/crates/rusty-type}{\textcolor{black}{Rusty-Type:}}} Published a Rust terminal typing-test game to crates.io featuring raw terminal control, multi-threaded timer logic, and character-by-character rendering — zero external UI frameworks. Implemented real-time keystroke handling, colored feedback and custom word-count modes.
 
-        \item \textbf{\href{https://drive.google.com/drive/folders/1zzEA-a7uvQMQkMIfpMbOHBisFKnyKKTE?usp=drive_link}{\textcolor{black}{Tip.sol:}}} Built a Solana-based mobile tipping app using React Native (Expo), enabling instant, low-fee creator payments. Implemented secure wallet integration via Solana Wallet Adapter and handled end-to-end on-chain transactions, delivering a production-ready UI in a hackathon.
+        \item \textbf{\href{https://drive.google.com/drive/folders/1zzEA-a7uvQMQkMIfpMbOHBisFKnyKKTE?usp=drive_link}{\textcolor{black}{Tip.sol:}}} Built a Solana-based mobile tipping app using React Native (Expo), enabling instant, low-fee creator payments. Implemented secure wallet integration via Solana Wallet Adapter and handled end-to-end on-chain transactions.
         
         \item \textbf{\href{https://journal-sol-one.vercel.app}{\textcolor{black}{Journal.sol:}}} Engineered a fully on-chain journaling dApp on Solana (Anchor + Next.js) with granular public/private entry visibility controlled by smart contracts — 100\% of user data stored on-chain with no centralized backend.
  
@@ -122,11 +130,9 @@
 %-------------------------
 \section{Leadership \& Community}
 \begin{tabularx}{\linewidth}{@{}X@{}}
-    \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=2pt]
+    \begin{itemize}[nosep, after=\strut, leftmargin=2em, itemsep=1.5pt]
  
-        \item \textbf{Founder, Web3Enclave:} Founded the first blockchain-focused technical club, built the community from the ground up, recruiting members, defining curriculum, and establishing a culture of hands-on Web3 experimentation.
- 
-        \item \textbf{Event Organiser:} Conceptualised and ran workshops, tech talks, and community sessions that collectively attracted \textbf{100+ attendees}, covering Solana development, smart contracts, and DeFi fundamentals, turning abstract blockchain concepts into practical skills for peers.
+        \item \textbf{Founder, Web3Enclave:} Founded the first blockchain-focused technical club in our college, recruiting members, defining curriculum, and running workshops and tech talks that attracted \textbf{100+ attendees} across Solana development, smart contracts, and DeFi fundamentals.
  
         \item \textbf{Volunteer, Web3Kerala:} Active contributor to one of Kerala's leading blockchain communities, supporting developer outreach, event coordination, and knowledge-sharing initiatives that strengthen the regional Web3 ecosystem.
  
